@@ -124,6 +124,14 @@ function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
+  if (arguments.length === 0){
+    return 0;
+  }
+  var prod = 1;
+  for (var i = 0; i < arguments.length; i++){
+    prod = prod * arguments[i];
+  }
+  return prod;
 }
 
 
@@ -154,13 +162,13 @@ function diaDeLaSemana(numeroDeDia) {
   }
 
 
-// ESTA FUNCION AUN NO ME DA
+
 function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
   var str = n.toString();
-  if (str[0] === 9){
+  if (str[0] === "9"){
     return true;
   } else {
     return false;
